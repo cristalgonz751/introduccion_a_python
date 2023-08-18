@@ -26,5 +26,5 @@ print('max-prom:',maximo-(suma/len(notas)))
 print('prom-min:',(suma/len(notas))-minimo)
 print('lista aprobados:',aprobados)
 print('cantidad de aprobados:',len(aprobados))
-
+print('mi')
 
