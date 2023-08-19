@@ -3,15 +3,15 @@ contador=0
 suma=0
 minimo=10
 maximo=1
-while contador!=10:
+while contador!=10:                         #ingreso 10 notas
     nota=input("ingrese nota:") 
-    if nota.isnumeric()==True:
+    if nota.isnumeric()==True:              #verifica si en numero y que este entre 1 y 10 inclusive      
         nota=int(nota)
         if nota >=1 and nota <=10:
-            notas.append(nota)
+            notas.append(nota)              #genera lista de notas validada
             contador+= 1
             suma+=nota
-            if nota<minimo:
+            if nota<minimo:                 #busca nota mínima y máxima
                 minimo=nota
             elif nota>maximo:
                 maximo=nota
