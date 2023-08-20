@@ -46,5 +46,5 @@ mejor_promedio=(mayor(promedios))
 print('el alumno %s posee el mejor promedio'%(mejor_promedio+1))
 mostrar(notas[mejor_promedio],promedios[mejor_promedio])
 promediosmaterias=mayor_materia(notas)
-print(promediosmaterias)
+#print(promediosmaterias)
 
