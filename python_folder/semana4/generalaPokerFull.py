@@ -40,6 +40,12 @@ def analizar(tirada):
     'salio un Poker'
     >>> analizar((6,6,2,6,6))
     'salio un Poker'
+    >>> analizar((5,3,5,3,3))
+    'salio un Full'
+    >>> analizar((2,2,4,2,4))
+    'salio un Full'
+    >>> analizar((1,5,1,5,1))
+    'salio un Full'
     '''
     lista=[]
     lista=ingresa(tirada)
@@ -61,9 +67,8 @@ def analizar(tirada):
             return 'salio un Poker'
     rolar=lista.pop(0)
     ocurre2=lista.count(rolar)
-    if ocurre1+ocurre2==5:
-        print('salio un Full')
-        return
+    if ocurre1+ocurre2==3:
+        return 'salio un Full'
      
     return 'no se formo Generala,Poker ni Full'
 
